@@ -292,7 +292,7 @@ if (urlParams) {
                   </div>
                   <div class="col-4">
                     <div class="celula">
-                      ${(peso ? peso.toLocaleString('pt-br') : '&nbsp;')}
+                      ${(peso ? peso.toFixed(3).replace('.', ',') : '&nbsp;')}
                     </div>
                   </div>
                 </div>
