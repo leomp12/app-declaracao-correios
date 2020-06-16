@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Declaração de Conteúdo (Correios)</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta content="Leonardo Matos de Paula" name="author"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <style>
+      .declaracao {
+        font-size: 16px;
+        line-height: 26px;
+        width: 1000px !important;
+        margin: 60px auto 30px auto;
+        padding: 0 2px;
+        page-break-after: always;
+        page-break-inside: avoid;
+      }
+      .row {
+        margin-right: -2px;
+        margin-left: -2px;
+      }
+      .row > div {
+        padding-right: 2px;
+        padding-left: 2px;
+      }
+      .linha {
+        margin-top: 4px;
+      }
+      .bloco {
+        border: 3px solid #333;
+        height: 100%;
+        text-align: center;
+        font-weight: 700;
+        width: 100%;
+      }
+      .celula {
+        border: 1px solid #333;
+        border-bottom: none;
+        text-align: left;
+        padding: 0 3px;
+        font-size: 14px;
+      }
+      .celula-unica {
+        border-left: none;
+        border-right: none;
+      }
+      .celula.texto {
+        line-height: inherit;
+      }
+      .texto-centro .celula {
+        text-align: center;
+      }
+      .texto-direita .celula {
+        text-align: right;
+      }
+      .tabela > .celula {
+        border-right: none;
+        border-left: none;
+      }
+      .tabela > .row > div {
+        padding-right: 0;
+        padding-left: 0;
+      }
+      .tabela > .row > div:first-child {
+        padding-left: 2px;
+      }
+      .tabela > .row > div:last-child {
+        padding-right: 2px;
+      }
+      .tabela > .row > div:first-child .celula {
+        border-left: none;
+      }
+      .tabela > .row > div:not(:last-child) .celula {
+        border-right: none;
+      }
+      .tabela > .row > div:last-child .celula {
+        border-right: none;
+      }
+      .texto {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+      }
+      .cinza {
+        background: #ddd;
+      }
+      .ass {
+        position: relative;
+        border-bottom: 1px solid #666;
+      }
+      .ass > span {
+        position: absolute;
+        right: 0;
+        bottom: -5px;
+        background: #fff;
+        padding: 5px;
+        line-height: 1;
+        font-weight: 400;
+      }
+      .imprimir {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 1;
+      }
+      @media print {
+        .imprimir {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <span class="imprimir">
+      <button class="btn btn-lg btn-primary" onclick="javascript:window.print();">
+        Imprimir
+      </button>
+    </span>
+    <main></main>
+  </body>
+</html>
