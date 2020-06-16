@@ -1,7 +1,7 @@
 {
   "name": "app-declaracao-correios",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Aplicação web simples para impressão de Declaração de Conteúdo no padrão Correios",
   "main": "src/index.js",
   "scripts": {
