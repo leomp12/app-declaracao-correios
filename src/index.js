@@ -38,15 +38,11 @@ if (urlParams) {
 
       let quantity = 0
       let subtotal = 0
-      let peso = 0
       order.itens.forEach(item => {
         if (item && item.quant) {
           quantity += item.quant
           if (item.valor) {
             subtotal += (item.valor * item.quant)
-          }
-          if (item.peso) {
-            peso += (item.peso * item.quant)
           }
         }
       })
@@ -292,7 +288,7 @@ if (urlParams) {
                   </div>
                   <div class="col-4">
                     <div class="celula">
-                      ${(peso ? peso.toFixed(3).replace('.', ',') : '&nbsp;')}
+                      ${(order.peso ? order.peso.toFixed(3).replace('.', ',') : '&nbsp;')}
                     </div>
                   </div>
                 </div>
