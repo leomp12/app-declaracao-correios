@@ -1,0 +1,47 @@
+{
+  "name": "app-declaracao-correios",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Aplicação web simples para impressão de Declaração de Conteúdo no padrão Correios",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack",
+    "serve": "cross-env NODE_ENV=development webpack-dev-server",
+    "release": "standard-version",
+    "test": "npm run serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leomp12/app-declaracao-correios.git"
+  },
+  "keywords": [
+    "correios",
+    "declaracao",
+    "conteudo"
+  ],
+  "author": "Leonardo Matos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leomp12/app-declaracao-correios/issues"
+  },
+  "homepage": "https://github.com/leomp12/app-declaracao-correios#readme",
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "core-js": "^3.6.5",
+    "cross-env": "^7.0.2",
+    "html-webpack-plugin": "^4.3.0",
+    "husky": "^4.2.5",
+    "standard-version": "^8.0.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@brazilian-utils/brazilian-utils": "^1.0.0-rc.7"
+  }
+}
