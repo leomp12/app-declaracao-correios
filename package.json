@@ -39,7 +39,7 @@
     "standard-version": "^8.0.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.11.3"
+    "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
     "@brazilian-utils/brazilian-utils": "^1.0.0-rc.7"
