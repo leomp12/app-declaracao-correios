@@ -4,7 +4,7 @@ const urlParams = new URLSearchParams(window.location.search)
 let orders
 
 if (urlParams) {
-  orders = urlParams.getAll('pedido').concat(urlParams.getAll('pedido[]'))
+  orders = window.PEDIDOS || urlParams.getAll('pedido').concat(urlParams.getAll('pedido[]'))
   const minItemRows = parseInt(urlParams.get('page'), 10)
 
   if (orders.length) {
