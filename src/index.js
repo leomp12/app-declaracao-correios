@@ -16,7 +16,9 @@ if (urlParams) {
     orders.forEach((orderJson, i) => {
       let order
       try {
-        order = JSON.parse(orderJson)
+        order = typeof orderJson === 'object' && orderJson
+          ? orderJson
+          : JSON.parse(orderJson)
       } catch (err) {
         console.error(err)
         window.alert(`O ${(i + 1)}° pedido é inválido`)
